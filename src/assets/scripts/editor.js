@@ -2,8 +2,9 @@ var app = new Vue({
   el: '#app',
   data: function () {
     return {
-      title: 'WeChat Format',
-      aboutOutput: '',
+      // title: 'WeChat Format',
+      title: '公众号Markdown编辑器',
+      aboutOutput: '阿斯顿发',
       output: '',
       source: '',
       editorThemes: [
@@ -20,18 +21,19 @@ var app = new Vue({
       currentFont: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
       currentSize: '16px',
       sizeOption: [
+        { label: '15px', value: '15px', desc: '15px' },
         { label: '16px', value: '16px', desc: '默认' },
         { label: '17px', value: '17px', desc: '正常' },
         { label: '18px', value: '18px', desc: '稍大' }
       ],
-      currentTheme: 'default',
+      currentTheme: 'hwq',
       themeOption: [
         { label: 'default', value: 'default', author: 'Lyric'},
-        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'}
+        { label: 'hwq', value: 'hwq', author: '黄文清'}
       ],
       styleThemes: {
         default: defaultTheme,
-        lupeng: lupengTheme
+        hwq: hwqTheme
       },
       aboutDialogVisible: false
     }
@@ -50,13 +52,13 @@ var app = new Vue({
     })
     // this.currentFont = this.builtinFonts[0],
     this.wxRenderer = new WxRenderer({
-      theme: this.styleThemes.default,
+      theme: this.styleThemes.hwq,
       fonts: this.currentFont,
       size: this.currentSize
     })
     axios({
       method: 'get',
-      url: './assets/default-content.md',
+      url: './assets/default-content-hwq.md',
     }).then(function (resp) {
       self.editor.setValue(resp.data)
     })
