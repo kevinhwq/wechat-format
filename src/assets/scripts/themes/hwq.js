@@ -2,7 +2,6 @@ var hwqTheme = {
     BASE: {
         'text-align': 'left',
         'color': '#595959',
-        'line-height': '1.55em',
         'letter-spacing': '0.06em'
     },
     BASE_BLOCK: defaultTheme.BASE_BLOCK,
@@ -24,14 +23,14 @@ var hwqTheme = {
             'border-radius': '3px',
         },
         link: {
-            'color': '#0052ff'
+            'color': '#355ea8'
         },
         wx_link: {
-            'color': '#ff3502',
+            'color': '#0052ff',
             'text-decoration': 'none'
         },
         strong: {
-            'color': '#ab1942',
+            'color': '#333',
             'font-weight': 'bold'
         },
         table: {

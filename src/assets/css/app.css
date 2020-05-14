@@ -2,7 +2,7 @@
 a { text-decoration: none; color: #ff3502 }
 input, button, textarea { font-family: inherit; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-em { font-style: normal !important; }
+/*em { font-style: normal !important; }*/
 html, body {
   height: 100%;
   font-family: 'PingFang SC', BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
@@ -62,7 +62,7 @@ section {
   margin: 20px 0;
 }
 .preview {
-  margin: 0 -20px;
+  margin: 20px;
   width: 375px;
   padding: 20px;
   font-size: 16px;

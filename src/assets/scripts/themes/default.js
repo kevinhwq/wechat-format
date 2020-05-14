@@ -2,19 +2,25 @@ var defaultTheme = {
   BASE: {
     'text-align': 'left',
     'color': '#3f3f3f',
-    'line-height': '1.5'
+    'line-height': '1.8'
   },
   BASE_BLOCK: {
     'margin': '20px 10px'
   },
   // block element
   block: {
+    h1: {
+      'font-size': '150%',
+      'text-align': 'center',
+      'font-weight': 'bold',
+      'color': '#ab1942',
+      'margin': '80px 10px 40px 10px'
+    },
     h2: {
       'font-size': '140%',
-      'text-align': 'center',
-      'font-weight': 'normal',
-      'text-align': 'center',
-      'margin': '80px 10px 40px 10px'
+      'text-align': 'left',
+      'font-weight': 'bold',
+      'margin': '40px 10px 20px 10px'
     },
     h3: {
       'font-weight': 'bold',
@@ -23,7 +29,7 @@ var defaultTheme = {
     },
     p: {
       'margin': '10px 10px',
-      'line-height': '1.6'
+      'line-height': '2'
     },
     blockquote: {
       'color': 'rgb(91, 91, 91)',
